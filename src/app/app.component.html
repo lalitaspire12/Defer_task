@@ -333,4 +333,35 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 
+@defer(on interaction){
+  <app-submit></app-submit>
+}
+@placeholder{
+  <span>placeholder</span>
+}
+
+
+
+
+
+<!-- 
+<div>
+  <input #checkboxDefer type="checkbox" [checked]="isCheckeDefer()" (change)="isCheckedDefer.set(checkboxDefer.checked)"
+  id="checkboxDefer"/>
+  <label for="checkboxDefer">Open the network tab of the browser's developer tools,then check this checkbox to load the 
+    <strong>app-submit</strong>component
+  </label>
+  @defer(when isCheckedDefer()){
+    <app-submit/>
+  }
+  @placeholder{
+    <span>placeholder</span>
+  }
+  @error{
+    <span>Error</span>
+  }
+  @loading(minimum ls){
+    <span>Loading ...</span>
+  }
+</div> -->
 <router-outlet></router-outlet>
